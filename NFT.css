@@ -1,0 +1,163 @@
+*
+{
+    font-family: 'Outfit', sans-serif,'Fraunces', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: hsl(217, 54%, 11%);
+    Font-size: 18px;
+}
+p
+{
+    Font-size: 18px;
+}
+.all
+{
+    width: 350px;
+    height: 600px;
+    margin:2.10% auto;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 350px 150px 100px;
+}
+.all .image
+{
+    border-radius: 20px 20px 0 0;
+    padding: 5%;
+}
+.all .image img
+{
+    position: relative;
+    cursor: pointer;
+    width: 314px;
+    height: 314px;
+    border-radius: 10px;
+    z-index: 10;
+}
+.all .image .activ
+{
+    position: absolute;
+    background-color: hsla(178, 100%, 49%, 0.698);
+    width: 314px;
+    height: 314px;
+    z-index: 20;
+    opacity: 0;
+    transition: all 0.75s;
+}
+.all .image .activ img
+{
+    position: relative;
+    top: 45%;
+    left: 43%;
+    width: 45px;
+    height: 45px;
+    
+}
+.all .image .activ:active
+{
+    opacity: 1;
+}
+.all .content
+{
+    padding: 5%;
+}
+.all .content h1
+{
+    cursor: pointer;
+    font-size: 25px;
+    color: #fff;
+    padding-bottom: 25px;    
+}
+.all .content h1:active
+{
+    color: hsl(178, 100%, 50%);
+}
+.all .content .test
+{
+    color: hsl(215deg 51% 70%)
+}
+.all .content div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5%;
+}
+.all .content .ETH
+{   
+    color: hsl(178, 100%, 50%);
+}
+.all .content .ETH img
+{
+    padding-right: 7px;
+}
+.all .content .day
+{
+    color: hsl(215deg 51% 70%);
+}
+.all .content .day img
+{
+    position: relative;
+    top: 2px;
+    padding-right: 7px;
+}
+/*.all .i .activ
+{
+    background-color: ;
+}*/
+.all .end 
+{
+    border-radius:0 0 20px 20px;
+    padding: 5%;
+    padding-top: 5%;
+}
+hr
+{
+    height:0.1px;
+    border-width:0;
+    background-color:rgb(79, 94, 115);
+}
+.all .end .photo
+{
+    width: 50px;
+    height: 50px;
+    margin-top: 5%;
+    background-color: #fff;
+    border-radius: 100%;
+    text-align: center;
+}
+.all .end .photo img
+{
+    margin: 2.3px auto;
+    width: 45px;
+    height: 45px;
+}
+.all .end p
+{  
+    position: relative;
+    top: -65px;
+    left: 40px;
+    margin-left: 20px;
+    padding-top: 10%;
+    color: hsl(215deg 51% 70%);
+    
+}
+.all .end p span:active
+{
+    color: hsl(178, 100%, 50%);
+}
+.all .end span
+{
+    cursor: pointer;
+    color: #fff;
+}
+@media  ( 890px <= height <= 3000px) {
+.all
+{
+    margin:15% auto;
+}
+}
